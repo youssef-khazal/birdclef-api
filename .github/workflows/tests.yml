@@ -23,3 +23,27 @@ jobs:
           for i in $(seq 1 60); do curl -sf localhost:7860/health && break; sleep 2; done
           curl -sf -F "file=@examples/bananaquit_XC912389.ogg" localhost:7860/predict | tee out.json
           python3 -c "import json; r = json.load(open('out.json')); assert r['top_k'][0]['common_name'] == 'Bananaquit', r"
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: sudo apt-get update && sudo apt-get install -y libsndfile1
+      - run: pip install -r requirements.txt && pip install -e . && pip install playwright && playwright install --with-deps chromium
+      - name: Prepare the in-browser demo
+        run: |
+          cd web && npm install && cd ..
+          cp models/efficientnet_b0.onnx models/labels.json web/assets/
+          mkdir -p web/assets/ort
+          cp web/node_modules/onnxruntime-web/dist/{ort.wasm.min.js,ort-wasm-simd-threaded.mjs,ort-wasm-simd-threaded.wasm} web/assets/ort/
+      - name: Browser vs Python parity
+        run: |
+          python -m http.server 8765 &
+          sleep 2
+          python scripts/check_web_parity.py

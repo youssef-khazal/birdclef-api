@@ -1,0 +1,8 @@
+{
+  "name": "species-sound-classifier-web",
+  "private": true,
+  "description": "In-browser demo: the ONNX model runs client-side with ONNX Runtime Web",
+  "dependencies": {
+    "onnxruntime-web": "1.29.0"
+  }
+}

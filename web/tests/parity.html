@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><script src="../assets/ort/ort.wasm.min.js"></script></head>
+<body>
+<script type="module">
+// Test page used by scripts/check_web_parity.py (not part of the demo).
+import * as C from "../classifier.js";
+window.ready = C.load("../assets/").then(() => "ok");
+window.runExample = async (name) => {
+  const y = await C.decode(await (await fetch("../../examples/" + name)).arrayBuffer());
+  const gray = C.toGray8(C.logMel(C.segments(y)[0]));
+  return { gray: Array.from(gray.pixels), result: await C.classify(y) };
+};
+window.resize = (pixels, w, h) => Array.from(C.resizeBilinear({ pixels: Uint8Array.from(pixels), width: w, height: h }));
+</script>
+</body></html>

@@ -2,9 +2,9 @@
 
 ![tests](https://github.com/youssef-khazal/birdclef-api/actions/workflows/tests.yml/badge.svg)
 
-Upload a field recording, get the species. This repository turns the best model from my [BirdCLEF+ 2025 project](https://github.com/youssef-khazal/birdclef-2025) (EfficientNet-B0, 206 species, 0.96 ROC-AUC on recordings never seen in training) into a **web service**: exported to **ONNX**, served with **FastAPI**, packaged with **Docker**, tested in **CI**, and deployed as a public demo.
+Upload a field recording, get the species. This repository turns the best model from my [BirdCLEF+ 2025 project](https://github.com/youssef-khazal/birdclef-2025) (EfficientNet-B0, 206 species, 0.96 ROC-AUC on recordings never seen in training) into a deployable model: exported to **ONNX**, served as an API with **FastAPI** and **Docker** (built and tested in **CI**), and running **in the browser** with ONNX Runtime Web for the public demo.
 
-**Live demo:** [huggingface.co/spaces/youssef-khazal/species-sound-classifier](https://huggingface.co/spaces/youssef-khazal/species-sound-classifier)
+**Live demo:** [huggingface.co/spaces/youssef-khazal/species-sound-classifier](https://huggingface.co/spaces/youssef-khazal/species-sound-classifier). The model runs on your own device, so recordings are never uploaded.
 
 ![Demo page](results/figures/demo.png)
 
@@ -46,7 +46,8 @@ Like the original evaluation, the recording is cut into 5-second segments, each 
 | Model export | PyTorch → ONNX (opset 17, dynamic batch) | Same top-1 prediction as PyTorch on 100% of 3,000 validation segments; logits within 1e-4 |
 | Serving | FastAPI + ONNX Runtime (CPU), input validation (size, length, format), model warm-up at start-up | 19 preprocessing, model and API tests run on every push |
 | Packaging | Docker (python:3.12-slim + ffmpeg, non-root user), health check | CI builds the image and sends a real recording to the running container |
-| Deployment | The same image runs on Hugging Face Spaces | Public demo |
+| In-browser demo | The same ONNX model in ONNX Runtime Web (WebAssembly); the preprocessing ported to JavaScript (FFT, Mel filterbank exported from librosa, matplotlib's gray lookup table, Pillow's bilinear resize) | `scripts/check_web_parity.py` in headless Chromium: resize identical to Pillow; first spectrogram pixel-identical for 2 of 3 examples (0.4% of pixels differ on the third, from the browser's audio decoder); same top-1 species and probabilities within 0.001 |
+| Hosting | Static page on Hugging Face Spaces: no server, no cold start | Public demo |
 
 ---
 
@@ -84,6 +85,13 @@ uvicorn birdclef_api.app:app --port 7860
 pytest
 ```
 
+**The in-browser demo:**
+```bash
+cd web && npm install && cd ..
+python scripts/build_space.py --out dist/space   # page + model + ONNX Runtime Web, ready to upload as a static Space
+cd dist/space && python -m http.server 8000      # open http://localhost:8000
+```
+
 **Re-export the model** from a BirdCLEF training run (needs PyTorch):
 ```bash
 pip install -e ".[export]"
@@ -102,13 +110,15 @@ src/birdclef_api/
   preprocessing.py   audio -> spectrogram -> model input (no PyTorch needed)
   model.py           ONNX Runtime classifier: segment probabilities, top-k species
   app.py             FastAPI app: /predict, /health, /species, demo page
-  static/index.html  demo page (upload or try an example)
+  static/index.html  demo page served by the API
+web/                 in-browser demo: index.html, classifier.js (preprocessing + ONNX Runtime Web), tests/parity.html
 models/              efficientnet_b0.onnx (served), efficientnet_b0_int8.onnx, labels.json
-scripts/             export_onnx.py (PyTorch -> ONNX -> INT8), benchmark.py
+scripts/             export_onnx.py (PyTorch -> ONNX -> INT8), benchmark.py, export_web_params.py,
+                     build_space.py (static Space), check_web_parity.py (browser vs Python)
 examples/            three held-out recordings (see attribution below)
 tests/               preprocessing parity, model, API
 results/             benchmark.json, figures
-Dockerfile           the image deployed on Hugging Face Spaces
+Dockerfile           CPU image of the API
 ```
 
 ---
@@ -117,7 +127,7 @@ Dockerfile           the image deployed on Hugging Face Spaces
 
 - **206 species only.** The model knows the species of the BirdCLEF+ 2025 competition (set in Colombia); a recording of any other species still gets one of these 206 answers. Rejecting "unknown" sounds would need a calibrated threshold.
 - **Focal recordings vs soundscapes.** It was trained on recordings with one main species; on long, noisy multi-species soundscapes it is much less reliable (see the original project).
-- **Free CPU hosting.** The demo runs on a small shared CPU; the first request after a pause can take a few seconds while the Space wakes up.
+- **Browser demo download.** The first visit downloads the model (17 MB) and the WebAssembly runtime (14 MB); after that the browser caches them.
 
 ---
 
