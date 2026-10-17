@@ -1,0 +1,10 @@
+# Runtime dependencies of the API (versions tested with the Docker image)
+numpy==2.5.4
+librosa==1.0.0
+soundfile==0.14.0
+matplotlib==3.11.2
+pillow==12.3.0
+onnxruntime==1.29.0
+fastapi==0.143.3
+uvicorn==0.53.0
+python-multipart==0.0.32

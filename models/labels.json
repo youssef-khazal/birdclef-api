@@ -1,0 +1,1238 @@
+[
+ {
+  "code": "1139490",
+  "common_name": "Ragoniella pulchella",
+  "scientific_name": "Ragoniella pulchella",
+  "group": "Insecta"
+ },
+ {
+  "code": "1192948",
+  "common_name": "Oxyprora surinamensis",
+  "scientific_name": "Oxyprora surinamensis",
+  "group": "Insecta"
+ },
+ {
+  "code": "1194042",
+  "common_name": "Copiphora colombiae",
+  "scientific_name": "Copiphora colombiae",
+  "group": "Insecta"
+ },
+ {
+  "code": "126247",
+  "common_name": "Spotted Foam-nest Frog",
+  "scientific_name": "Leptodactylus insularum",
+  "group": "Amphibia"
+ },
+ {
+  "code": "1346504",
+  "common_name": "Neoconocephalus brachypterus",
+  "scientific_name": "Neoconocephalus brachypterus",
+  "group": "Insecta"
+ },
+ {
+  "code": "134933",
+  "common_name": "Emerald Glass Frog",
+  "scientific_name": "Espadarana prosoblepon",
+  "group": "Amphibia"
+ },
+ {
+  "code": "135045",
+  "common_name": "Andean Poison Frog",
+  "scientific_name": "Andinobates opisthomelas",
+  "group": "Amphibia"
+ },
+ {
+  "code": "1462711",
+  "common_name": "Cocconotus aratifrons",
+  "scientific_name": "Cocconotus aratifrons",
+  "group": "Insecta"
+ },
+ {
+  "code": "1462737",
+  "common_name": "Docidocercus fasciatus",
+  "scientific_name": "Docidocercus fasciatus",
+  "group": "Insecta"
+ },
+ {
+  "code": "1564122",
+  "common_name": "Daedadelus waehnerorum ",
+  "scientific_name": "Daedadelus waehnerorum ",
+  "group": "Insecta"
+ },
+ {
+  "code": "21038",
+  "common_name": "Common Rocket Frog",
+  "scientific_name": "Colostethus inguinalis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "21116",
+  "common_name": "Yellow-striped Poison Dart Frog",
+  "scientific_name": "Dendrobates truncatus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "21211",
+  "common_name": "Spotted-thighed Poison Frog",
+  "scientific_name": "Allobates femoralis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "22333",
+  "common_name": "Lesser Antillean whistling frog",
+  "scientific_name": "Eleutherodactylus johnstonei",
+  "group": "Amphibia"
+ },
+ {
+  "code": "22973",
+  "common_name": "Whistling Grass Frog",
+  "scientific_name": "Leptodactylus fuscus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "22976",
+  "common_name": "Mexican White-lipped Frog",
+  "scientific_name": "Leptodactylus fragilis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "24272",
+  "common_name": "Masked Tree Frog",
+  "scientific_name": "Smilisca phaeota",
+  "group": "Amphibia"
+ },
+ {
+  "code": "24292",
+  "common_name": "Caracas Snouted Tree Frog",
+  "scientific_name": "Scinax rostratus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "24322",
+  "common_name": "Red Snouted Tree Frog",
+  "scientific_name": "Scinax ruber",
+  "group": "Amphibia"
+ },
+ {
+  "code": "41663",
+  "common_name": "Common Raccoon",
+  "scientific_name": "Procyon lotor",
+  "group": "Mammalia"
+ },
+ {
+  "code": "41778",
+  "common_name": "Neotropical River Otter",
+  "scientific_name": "Lontra longicaudis",
+  "group": "Mammalia"
+ },
+ {
+  "code": "41970",
+  "common_name": "Jaguar",
+  "scientific_name": "Panthera onca",
+  "group": "Mammalia"
+ },
+ {
+  "code": "42007",
+  "common_name": "Mountain Lion",
+  "scientific_name": "Puma concolor",
+  "group": "Mammalia"
+ },
+ {
+  "code": "42087",
+  "common_name": "Crab-eating Fox",
+  "scientific_name": "Cerdocyon thous",
+  "group": "Mammalia"
+ },
+ {
+  "code": "42113",
+  "common_name": "Collared Peccary",
+  "scientific_name": "Pecari tajacu",
+  "group": "Mammalia"
+ },
+ {
+  "code": "46010",
+  "common_name": "Red-tailed Squirrel",
+  "scientific_name": "Sciurus granatensis",
+  "group": "Mammalia"
+ },
+ {
+  "code": "47067",
+  "common_name": "Brown-throated Three-toed Sloth",
+  "scientific_name": "Bradypus variegatus",
+  "group": "Mammalia"
+ },
+ {
+  "code": "476537",
+  "common_name": "Colombian Plump Frog",
+  "scientific_name": "Elachistocleis pearsei",
+  "group": "Amphibia"
+ },
+ {
+  "code": "476538",
+  "common_name": "Panama Humming Frog",
+  "scientific_name": "Elachistocleis panamensis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "48124",
+  "common_name": "Katydids",
+  "scientific_name": "Tettigoniidae",
+  "group": "Insecta"
+ },
+ {
+  "code": "50186",
+  "common_name": "Typical Cicadas",
+  "scientific_name": "Cicadidae",
+  "group": "Insecta"
+ },
+ {
+  "code": "517119",
+  "common_name": "Giant Toad",
+  "scientific_name": "Rhinella horribilis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "523060",
+  "common_name": "Eschatoceras bipunctatus",
+  "scientific_name": "Eschatoceras bipunctatus",
+  "group": "Insecta"
+ },
+ {
+  "code": "528041",
+  "common_name": "Orophus conspersus",
+  "scientific_name": "Orophus conspersus",
+  "group": "Insecta"
+ },
+ {
+  "code": "52884",
+  "common_name": "True Crickets",
+  "scientific_name": "Gryllidae",
+  "group": "Insecta"
+ },
+ {
+  "code": "548639",
+  "common_name": "Copiphora gracilis",
+  "scientific_name": "Copiphora gracilis",
+  "group": "Insecta"
+ },
+ {
+  "code": "555086",
+  "common_name": "Rusty Tree Frog",
+  "scientific_name": "Boana boans",
+  "group": "Amphibia"
+ },
+ {
+  "code": "555142",
+  "common_name": "Chirique-Flusse Tree Frog",
+  "scientific_name": "Boana pugnax",
+  "group": "Amphibia"
+ },
+ {
+  "code": "566513",
+  "common_name": "Colombian Red Howler Monkey",
+  "scientific_name": "Alouatta seniculus",
+  "group": "Mammalia"
+ },
+ {
+  "code": "64862",
+  "common_name": "Colombian Niputidea Nurse Frog",
+  "scientific_name": "Allobates niputidea",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65336",
+  "common_name": "Bogert's Aquatic Tree Frog",
+  "scientific_name": "Dendropsophus bogerti",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65344",
+  "common_name": "Boettger's Colombian Tree Frog",
+  "scientific_name": "Dendropsophus columbianus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65349",
+  "common_name": "Harlequin Treefrog",
+  "scientific_name": "Dendropsophus ebraccatus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65373",
+  "common_name": "Yellow Tree Frog",
+  "scientific_name": "Dendropsophus microcephalus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65419",
+  "common_name": "Esmereldas Robber Frog",
+  "scientific_name": "Diasporus gularis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65448",
+  "common_name": "Túngara Frog",
+  "scientific_name": "Engystomops pustulosus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65547",
+  "common_name": "Tatayo's Glass Frog",
+  "scientific_name": "Hyalinobatrachium tatayoi",
+  "group": "Amphibia"
+ },
+ {
+  "code": "65962",
+  "common_name": "Savage's Thin-toed Frog",
+  "scientific_name": "Leptodactylus savagei",
+  "group": "Amphibia"
+ },
+ {
+  "code": "66016",
+  "common_name": "Vaillant's Frog",
+  "scientific_name": "Lithobates vaillanti",
+  "group": "Amphibia"
+ },
+ {
+  "code": "66531",
+  "common_name": "Cachabi Robber Frog",
+  "scientific_name": "Pristimantis achatinus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "66578",
+  "common_name": "Bogota Robber Frog",
+  "scientific_name": "Pristimantis bogotensis",
+  "group": "Amphibia"
+ },
+ {
+  "code": "66893",
+  "common_name": "Banded Rain Frog",
+  "scientific_name": "Pristimantis taeniatus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "67082",
+  "common_name": "Palm Rocket Frog",
+  "scientific_name": "Rheobates palmatus",
+  "group": "Amphibia"
+ },
+ {
+  "code": "67252",
+  "common_name": "Veined Tree Frog",
+  "scientific_name": "Trachycephalus typhonius",
+  "group": "Amphibia"
+ },
+ {
+  "code": "714022",
+  "common_name": "Panoploscelis specularis",
+  "scientific_name": "Panoploscelis specularis",
+  "group": "Insecta"
+ },
+ {
+  "code": "715170",
+  "common_name": "Copris susanae",
+  "scientific_name": "Copris susanae",
+  "group": "Insecta"
+ },
+ {
+  "code": "787625",
+  "common_name": "Santa Rita Rocket Frog",
+  "scientific_name": "Leucostethus fraterdanieli",
+  "group": "Amphibia"
+ },
+ {
+  "code": "81930",
+  "common_name": "Rivero's Toad",
+  "scientific_name": "Rhinella humboldti",
+  "group": "Amphibia"
+ },
+ {
+  "code": "868458",
+  "common_name": "Typophyllum inflatum",
+  "scientific_name": "Typophyllum inflatum",
+  "group": "Insecta"
+ },
+ {
+  "code": "963335",
+  "common_name": "Subria sylvestris",
+  "scientific_name": "Subria sylvestris",
+  "group": "Insecta"
+ },
+ {
+  "code": "amakin1",
+  "common_name": "Amazon Kingfisher",
+  "scientific_name": "Chloroceryle amazona",
+  "group": "Aves"
+ },
+ {
+  "code": "amekes",
+  "common_name": "American Kestrel",
+  "scientific_name": "Falco sparverius",
+  "group": "Aves"
+ },
+ {
+  "code": "ampkin1",
+  "common_name": "American Pygmy Kingfisher",
+  "scientific_name": "Chloroceryle aenea",
+  "group": "Aves"
+ },
+ {
+  "code": "anhing",
+  "common_name": "Anhinga",
+  "scientific_name": "Anhinga anhinga",
+  "group": "Aves"
+ },
+ {
+  "code": "babwar",
+  "common_name": "Bay-breasted Warbler",
+  "scientific_name": "Setophaga castanea",
+  "group": "Aves"
+ },
+ {
+  "code": "bafibi1",
+  "common_name": "Bare-faced Ibis",
+  "scientific_name": "Phimosus infuscatus",
+  "group": "Aves"
+ },
+ {
+  "code": "banana",
+  "common_name": "Bananaquit",
+  "scientific_name": "Coereba flaveola",
+  "group": "Aves"
+ },
+ {
+  "code": "baymac",
+  "common_name": "Blue-and-yellow Macaw",
+  "scientific_name": "Ara ararauna",
+  "group": "Aves"
+ },
+ {
+  "code": "bbwduc",
+  "common_name": "Black-bellied Whistling-Duck",
+  "scientific_name": "Dendrocygna autumnalis",
+  "group": "Aves"
+ },
+ {
+  "code": "bicwre1",
+  "common_name": "Bicolored Wren",
+  "scientific_name": "Campylorhynchus griseus",
+  "group": "Aves"
+ },
+ {
+  "code": "bkcdon",
+  "common_name": "Black-capped Donacobius",
+  "scientific_name": "Donacobius atricapilla",
+  "group": "Aves"
+ },
+ {
+  "code": "bkmtou1",
+  "common_name": "Yellow-throated Toucan",
+  "scientific_name": "Ramphastos ambiguus",
+  "group": "Aves"
+ },
+ {
+  "code": "blbgra1",
+  "common_name": "Blue-black Grassquit",
+  "scientific_name": "Volatinia jacarina",
+  "group": "Aves"
+ },
+ {
+  "code": "blbwre1",
+  "common_name": "Black-bellied Wren",
+  "scientific_name": "Pheugopedius fasciatoventris",
+  "group": "Aves"
+ },
+ {
+  "code": "blcant4",
+  "common_name": "Black-crested Antshrike",
+  "scientific_name": "Sakesphorus canadensis",
+  "group": "Aves"
+ },
+ {
+  "code": "blchaw1",
+  "common_name": "Black-collared Hawk",
+  "scientific_name": "Busarellus nigricollis",
+  "group": "Aves"
+ },
+ {
+  "code": "blcjay1",
+  "common_name": "Black-chested Jay",
+  "scientific_name": "Cyanocorax affinis",
+  "group": "Aves"
+ },
+ {
+  "code": "blctit1",
+  "common_name": "Black-crowned Tityra",
+  "scientific_name": "Tityra inquisitor",
+  "group": "Aves"
+ },
+ {
+  "code": "blhpar1",
+  "common_name": "Blue-headed Parrot",
+  "scientific_name": "Pionus menstruus",
+  "group": "Aves"
+ },
+ {
+  "code": "blkvul",
+  "common_name": "Black Vulture",
+  "scientific_name": "Coragyps atratus",
+  "group": "Aves"
+ },
+ {
+  "code": "bobfly1",
+  "common_name": "Boat-billed Flycatcher",
+  "scientific_name": "Megarynchus pitangua",
+  "group": "Aves"
+ },
+ {
+  "code": "bobher1",
+  "common_name": "Boat-billed Heron",
+  "scientific_name": "Cochlearius cochlearius",
+  "group": "Aves"
+ },
+ {
+  "code": "brtpar1",
+  "common_name": "Brown-throated Parakeet",
+  "scientific_name": "Eupsittula pertinax",
+  "group": "Aves"
+ },
+ {
+  "code": "bubcur1",
+  "common_name": "Blue-billed Curassow",
+  "scientific_name": "Crax alberti",
+  "group": "Aves"
+ },
+ {
+  "code": "bubwre1",
+  "common_name": "Buff-breasted Wren",
+  "scientific_name": "Cantorchilus leucotis",
+  "group": "Aves"
+ },
+ {
+  "code": "bucmot3",
+  "common_name": "Whooping Motmot",
+  "scientific_name": "Momotus subrufescens",
+  "group": "Aves"
+ },
+ {
+  "code": "bugtan",
+  "common_name": "Blue-gray Tanager",
+  "scientific_name": "Thraupis episcopus",
+  "group": "Aves"
+ },
+ {
+  "code": "butsal1",
+  "common_name": "Buff-throated Saltator",
+  "scientific_name": "Saltator maximus",
+  "group": "Aves"
+ },
+ {
+  "code": "cargra1",
+  "common_name": "Carib Grackle",
+  "scientific_name": "Quiscalus lugubris",
+  "group": "Aves"
+ },
+ {
+  "code": "cattyr",
+  "common_name": "Cattle Tyrant",
+  "scientific_name": "Machetornis rixosa",
+  "group": "Aves"
+ },
+ {
+  "code": "chbant1",
+  "common_name": "Chestnut-backed Antbird",
+  "scientific_name": "Poliocrania exsul",
+  "group": "Aves"
+ },
+ {
+  "code": "chfmac1",
+  "common_name": "Chestnut-fronted Macaw",
+  "scientific_name": "Ara severus",
+  "group": "Aves"
+ },
+ {
+  "code": "cinbec1",
+  "common_name": "Cinnamon Becard",
+  "scientific_name": "Pachyramphus cinnamomeus",
+  "group": "Aves"
+ },
+ {
+  "code": "cocher1",
+  "common_name": "Cocoi Heron",
+  "scientific_name": "Ardea cocoi",
+  "group": "Aves"
+ },
+ {
+  "code": "cocwoo1",
+  "common_name": "Cocoa Woodcreeper",
+  "scientific_name": "Xiphorhynchus susurrans",
+  "group": "Aves"
+ },
+ {
+  "code": "colara1",
+  "common_name": "Collared Aracari",
+  "scientific_name": "Pteroglossus torquatus",
+  "group": "Aves"
+ },
+ {
+  "code": "colcha1",
+  "common_name": "Colombian Chachalaca",
+  "scientific_name": "Ortalis columbiana",
+  "group": "Aves"
+ },
+ {
+  "code": "compau",
+  "common_name": "Common Pauraque",
+  "scientific_name": "Nyctidromus albicollis",
+  "group": "Aves"
+ },
+ {
+  "code": "compot1",
+  "common_name": "Common Potoo",
+  "scientific_name": "Nyctibius griseus",
+  "group": "Aves"
+ },
+ {
+  "code": "cotfly1",
+  "common_name": "Common Tody-Flycatcher",
+  "scientific_name": "Todirostrum cinereum",
+  "group": "Aves"
+ },
+ {
+  "code": "crbtan1",
+  "common_name": "Crimson-backed Tanager",
+  "scientific_name": "Ramphocelus dimidiatus",
+  "group": "Aves"
+ },
+ {
+  "code": "crcwoo1",
+  "common_name": "Crimson-crested Woodpecker",
+  "scientific_name": "Campephilus melanoleucos",
+  "group": "Aves"
+ },
+ {
+  "code": "crebob1",
+  "common_name": "Crested Bobwhite",
+  "scientific_name": "Colinus cristatus",
+  "group": "Aves"
+ },
+ {
+  "code": "cregua1",
+  "common_name": "Crested Guan",
+  "scientific_name": "Penelope purpurascens",
+  "group": "Aves"
+ },
+ {
+  "code": "creoro1",
+  "common_name": "Crested Oropendola",
+  "scientific_name": "Psarocolius decumanus",
+  "group": "Aves"
+ },
+ {
+  "code": "eardov1",
+  "common_name": "Eared Dove",
+  "scientific_name": "Zenaida auriculata",
+  "group": "Aves"
+ },
+ {
+  "code": "fotfly",
+  "common_name": "Fork-tailed Flycatcher",
+  "scientific_name": "Tyrannus savana",
+  "group": "Aves"
+ },
+ {
+  "code": "gohman1",
+  "common_name": "Golden-headed Manakin",
+  "scientific_name": "Ceratopipra erythrocephala",
+  "group": "Aves"
+ },
+ {
+  "code": "grasal4",
+  "common_name": "Olivaceous Saltator",
+  "scientific_name": "Saltator olivascens",
+  "group": "Aves"
+ },
+ {
+  "code": "grbhaw1",
+  "common_name": "Great Black Hawk",
+  "scientific_name": "Buteogallus urubitinga",
+  "group": "Aves"
+ },
+ {
+  "code": "greani1",
+  "common_name": "Greater Ani",
+  "scientific_name": "Crotophaga major",
+  "group": "Aves"
+ },
+ {
+  "code": "greegr",
+  "common_name": "Great Egret",
+  "scientific_name": "Ardea alba",
+  "group": "Aves"
+ },
+ {
+  "code": "greibi1",
+  "common_name": "Green Ibis",
+  "scientific_name": "Mesembrinibis cayennensis",
+  "group": "Aves"
+ },
+ {
+  "code": "grekis",
+  "common_name": "Great Kiskadee",
+  "scientific_name": "Pitangus sulphuratus",
+  "group": "Aves"
+ },
+ {
+  "code": "grepot1",
+  "common_name": "Great Potoo",
+  "scientific_name": "Nyctibius grandis",
+  "group": "Aves"
+ },
+ {
+  "code": "gretin1",
+  "common_name": "Great Tinamou",
+  "scientific_name": "Tinamus major",
+  "group": "Aves"
+ },
+ {
+  "code": "grnkin",
+  "common_name": "Green Kingfisher",
+  "scientific_name": "Chloroceryle americana",
+  "group": "Aves"
+ },
+ {
+  "code": "grysee1",
+  "common_name": "Gray Seedeater",
+  "scientific_name": "Sporophila intermedia",
+  "group": "Aves"
+ },
+ {
+  "code": "gybmar",
+  "common_name": "Gray-breasted Martin",
+  "scientific_name": "Progne chalybea",
+  "group": "Aves"
+ },
+ {
+  "code": "gycwor1",
+  "common_name": "Gray-cowled Wood-Rail",
+  "scientific_name": "Aramides cajaneus",
+  "group": "Aves"
+ },
+ {
+  "code": "labter1",
+  "common_name": "Large-billed Tern",
+  "scientific_name": "Phaetusa simplex",
+  "group": "Aves"
+ },
+ {
+  "code": "laufal1",
+  "common_name": "Laughing Falcon",
+  "scientific_name": "Herpetotheres cachinnans",
+  "group": "Aves"
+ },
+ {
+  "code": "leagre",
+  "common_name": "Least Grebe",
+  "scientific_name": "Tachybaptus dominicus",
+  "group": "Aves"
+ },
+ {
+  "code": "linwoo1",
+  "common_name": "Lineated Woodpecker",
+  "scientific_name": "Dryocopus lineatus",
+  "group": "Aves"
+ },
+ {
+  "code": "littin1",
+  "common_name": "Little Tinamou",
+  "scientific_name": "Crypturellus soui",
+  "group": "Aves"
+ },
+ {
+  "code": "mastit1",
+  "common_name": "Masked Tityra",
+  "scientific_name": "Tityra semifasciata",
+  "group": "Aves"
+ },
+ {
+  "code": "neocor",
+  "common_name": "Neotropic Cormorant",
+  "scientific_name": "Nannopterum brasilianum",
+  "group": "Aves"
+ },
+ {
+  "code": "norscr1",
+  "common_name": "Northern Screamer",
+  "scientific_name": "Chauna chavaria",
+  "group": "Aves"
+ },
+ {
+  "code": "olipic1",
+  "common_name": "Olivaceous Piculet",
+  "scientific_name": "Picumnus olivaceus",
+  "group": "Aves"
+ },
+ {
+  "code": "orcpar",
+  "common_name": "Orange-chinned Parakeet",
+  "scientific_name": "Brotogeris jugularis",
+  "group": "Aves"
+ },
+ {
+  "code": "palhor2",
+  "common_name": "Pale-legged Hornero",
+  "scientific_name": "Furnarius leucopus",
+  "group": "Aves"
+ },
+ {
+  "code": "paltan1",
+  "common_name": "Palm Tanager",
+  "scientific_name": "Thraupis palmarum",
+  "group": "Aves"
+ },
+ {
+  "code": "pavpig2",
+  "common_name": "Pale-vented Pigeon",
+  "scientific_name": "Patagioenas cayennensis",
+  "group": "Aves"
+ },
+ {
+  "code": "piepuf1",
+  "common_name": "Pied Puffbird",
+  "scientific_name": "Notharchus tectus",
+  "group": "Aves"
+ },
+ {
+  "code": "pirfly1",
+  "common_name": "Piratic Flycatcher",
+  "scientific_name": "Legatus leucophaius",
+  "group": "Aves"
+ },
+ {
+  "code": "piwtyr1",
+  "common_name": "Pied Water-Tyrant",
+  "scientific_name": "Fluvicola pica",
+  "group": "Aves"
+ },
+ {
+  "code": "plbwoo1",
+  "common_name": "Plain-brown Woodcreeper",
+  "scientific_name": "Dendrocincla fuliginosa",
+  "group": "Aves"
+ },
+ {
+  "code": "plctan1",
+  "common_name": "Plain-colored Tanager",
+  "scientific_name": "Tangara inornata",
+  "group": "Aves"
+ },
+ {
+  "code": "plukit1",
+  "common_name": "Plumbeous Kite",
+  "scientific_name": "Ictinia plumbea",
+  "group": "Aves"
+ },
+ {
+  "code": "purgal2",
+  "common_name": "Purple Gallinule",
+  "scientific_name": "Porphyrio martinica",
+  "group": "Aves"
+ },
+ {
+  "code": "ragmac1",
+  "common_name": "Red-and-green Macaw",
+  "scientific_name": "Ara chloropterus",
+  "group": "Aves"
+ },
+ {
+  "code": "rebbla1",
+  "common_name": "Red-breasted Meadowlark",
+  "scientific_name": "Leistes militaris",
+  "group": "Aves"
+ },
+ {
+  "code": "recwoo1",
+  "common_name": "Red-crowned Woodpecker",
+  "scientific_name": "Melanerpes rubricapillus",
+  "group": "Aves"
+ },
+ {
+  "code": "rinkin1",
+  "common_name": "Ringed Kingfisher",
+  "scientific_name": "Megaceryle torquata",
+  "group": "Aves"
+ },
+ {
+  "code": "roahaw",
+  "common_name": "Roadside Hawk",
+  "scientific_name": "Rupornis magnirostris",
+  "group": "Aves"
+ },
+ {
+  "code": "rosspo1",
+  "common_name": "Roseate Spoonbill",
+  "scientific_name": "Platalea ajaja",
+  "group": "Aves"
+ },
+ {
+  "code": "royfly1",
+  "common_name": "Royal Flycatcher",
+  "scientific_name": "Onychorhynchus coronatus",
+  "group": "Aves"
+ },
+ {
+  "code": "rtlhum",
+  "common_name": "Rufous-tailed Hummingbird",
+  "scientific_name": "Amazilia tzacatl",
+  "group": "Aves"
+ },
+ {
+  "code": "rubsee1",
+  "common_name": "Ruddy-breasted Seedeater",
+  "scientific_name": "Sporophila minuta",
+  "group": "Aves"
+ },
+ {
+  "code": "rufmot1",
+  "common_name": "Rufous Motmot",
+  "scientific_name": "Baryphthengus martii",
+  "group": "Aves"
+ },
+ {
+  "code": "rugdov",
+  "common_name": "Ruddy Ground Dove",
+  "scientific_name": "Columbina talpacoti",
+  "group": "Aves"
+ },
+ {
+  "code": "rumfly1",
+  "common_name": "Rusty-margined Flycatcher",
+  "scientific_name": "Myiozetetes cayanensis",
+  "group": "Aves"
+ },
+ {
+  "code": "ruther1",
+  "common_name": "Rufescent Tiger-Heron",
+  "scientific_name": "Tigrisoma lineatum",
+  "group": "Aves"
+ },
+ {
+  "code": "rutjac1",
+  "common_name": "Rufous-tailed Jacamar",
+  "scientific_name": "Galbula ruficauda",
+  "group": "Aves"
+ },
+ {
+  "code": "rutpuf1",
+  "common_name": "Russet-throated Puffbird",
+  "scientific_name": "Hypnelus ruficollis",
+  "group": "Aves"
+ },
+ {
+  "code": "saffin",
+  "common_name": "Saffron Finch",
+  "scientific_name": "Sicalis flaveola",
+  "group": "Aves"
+ },
+ {
+  "code": "sahpar1",
+  "common_name": "Saffron-headed Parrot",
+  "scientific_name": "Pyrilia pyrilia",
+  "group": "Aves"
+ },
+ {
+  "code": "savhaw1",
+  "common_name": "Savanna Hawk",
+  "scientific_name": "Buteogallus meridionalis",
+  "group": "Aves"
+ },
+ {
+  "code": "secfly1",
+  "common_name": "Sepia-capped Flycatcher",
+  "scientific_name": "Leptopogon amaurocephalus",
+  "group": "Aves"
+ },
+ {
+  "code": "shghum1",
+  "common_name": "Shining-green Hummingbird",
+  "scientific_name": "Chrysuronia goudoti",
+  "group": "Aves"
+ },
+ {
+  "code": "shtfly1",
+  "common_name": "Slate-headed Tody-Flycatcher",
+  "scientific_name": "Poecilotriccus sylvia",
+  "group": "Aves"
+ },
+ {
+  "code": "smbani",
+  "common_name": "Smooth-billed Ani",
+  "scientific_name": "Crotophaga ani",
+  "group": "Aves"
+ },
+ {
+  "code": "snoegr",
+  "common_name": "Snowy Egret",
+  "scientific_name": "Egretta thula",
+  "group": "Aves"
+ },
+ {
+  "code": "sobtyr1",
+  "common_name": "Southern Beardless-Tyrannulet",
+  "scientific_name": "Camptostoma obsoletum",
+  "group": "Aves"
+ },
+ {
+  "code": "socfly1",
+  "common_name": "Social Flycatcher",
+  "scientific_name": "Myiozetetes similis",
+  "group": "Aves"
+ },
+ {
+  "code": "solsan",
+  "common_name": "Solitary Sandpiper",
+  "scientific_name": "Tringa solitaria",
+  "group": "Aves"
+ },
+ {
+  "code": "soulap1",
+  "common_name": "Southern Lapwing",
+  "scientific_name": "Vanellus chilensis",
+  "group": "Aves"
+ },
+ {
+  "code": "spbwoo1",
+  "common_name": "Spot-breasted Woodpecker",
+  "scientific_name": "Colaptes punctigula",
+  "group": "Aves"
+ },
+ {
+  "code": "speowl1",
+  "common_name": "Spectacled Owl",
+  "scientific_name": "Pulsatrix perspicillata",
+  "group": "Aves"
+ },
+ {
+  "code": "spepar1",
+  "common_name": "Spectacled Parrotlet",
+  "scientific_name": "Forpus conspicillatus",
+  "group": "Aves"
+ },
+ {
+  "code": "srwswa1",
+  "common_name": "Southern Rough-winged Swallow",
+  "scientific_name": "Stelgidopteryx ruficollis",
+  "group": "Aves"
+ },
+ {
+  "code": "stbwoo2",
+  "common_name": "Straight-billed Woodcreeper",
+  "scientific_name": "Dendroplex picus",
+  "group": "Aves"
+ },
+ {
+  "code": "strcuc1",
+  "common_name": "Striped Cuckoo",
+  "scientific_name": "Tapera naevia",
+  "group": "Aves"
+ },
+ {
+  "code": "strfly1",
+  "common_name": "Streaked Flycatcher",
+  "scientific_name": "Myiodynastes maculatus",
+  "group": "Aves"
+ },
+ {
+  "code": "strher",
+  "common_name": "Striated Heron",
+  "scientific_name": "Butorides striata",
+  "group": "Aves"
+ },
+ {
+  "code": "strowl1",
+  "common_name": "Striped Owl",
+  "scientific_name": "Asio clamator",
+  "group": "Aves"
+ },
+ {
+  "code": "tbsfin1",
+  "common_name": "Thick-billed Seed-Finch",
+  "scientific_name": "Sporophila funerea",
+  "group": "Aves"
+ },
+ {
+  "code": "thbeup1",
+  "common_name": "Thick-billed Euphonia",
+  "scientific_name": "Euphonia laniirostris",
+  "group": "Aves"
+ },
+ {
+  "code": "thlsch3",
+  "common_name": "Brown-winged Schiffornis",
+  "scientific_name": "Schiffornis turdina",
+  "group": "Aves"
+ },
+ {
+  "code": "trokin",
+  "common_name": "Tropical Kingbird",
+  "scientific_name": "Tyrannus melancholicus",
+  "group": "Aves"
+ },
+ {
+  "code": "tropar",
+  "common_name": "Tropical Parula",
+  "scientific_name": "Setophaga pitiayumi",
+  "group": "Aves"
+ },
+ {
+  "code": "trsowl",
+  "common_name": "Tropical Screech-Owl",
+  "scientific_name": "Megascops choliba",
+  "group": "Aves"
+ },
+ {
+  "code": "turvul",
+  "common_name": "Turkey Vulture",
+  "scientific_name": "Cathartes aura",
+  "group": "Aves"
+ },
+ {
+  "code": "verfly",
+  "common_name": "Vermilion Flycatcher",
+  "scientific_name": "Pyrocephalus rubinus",
+  "group": "Aves"
+ },
+ {
+  "code": "watjac1",
+  "common_name": "Wattled Jacana",
+  "scientific_name": "Jacana jacana",
+  "group": "Aves"
+ },
+ {
+  "code": "wbwwre1",
+  "common_name": "White-breasted Wood-Wren",
+  "scientific_name": "Henicorhina leucosticta",
+  "group": "Aves"
+ },
+ {
+  "code": "whbant1",
+  "common_name": "White-bellied Antbird",
+  "scientific_name": "Myrmeciza longipes",
+  "group": "Aves"
+ },
+ {
+  "code": "whbman1",
+  "common_name": "White-bearded Manakin",
+  "scientific_name": "Manacus manacus",
+  "group": "Aves"
+ },
+ {
+  "code": "whfant1",
+  "common_name": "White-fringed Antwren",
+  "scientific_name": "Formicivora grisea",
+  "group": "Aves"
+ },
+ {
+  "code": "whmtyr1",
+  "common_name": "White-headed Marsh Tyrant",
+  "scientific_name": "Arundinicola leucocephala",
+  "group": "Aves"
+ },
+ {
+  "code": "whtdov",
+  "common_name": "White-tipped Dove",
+  "scientific_name": "Leptotila verreauxi",
+  "group": "Aves"
+ },
+ {
+  "code": "whttro1",
+  "common_name": "White-tailed Trogon",
+  "scientific_name": "Trogon chionurus",
+  "group": "Aves"
+ },
+ {
+  "code": "whwswa1",
+  "common_name": "White-winged Swallow",
+  "scientific_name": "Tachycineta albiventer",
+  "group": "Aves"
+ },
+ {
+  "code": "woosto",
+  "common_name": "Wood Stork",
+  "scientific_name": "Mycteria americana",
+  "group": "Aves"
+ },
+ {
+  "code": "y00678",
+  "common_name": "Crested Caracara",
+  "scientific_name": "Caracara plancus",
+  "group": "Aves"
+ },
+ {
+  "code": "yebela1",
+  "common_name": "Yellow-bellied Elaenia",
+  "scientific_name": "Elaenia flavogaster",
+  "group": "Aves"
+ },
+ {
+  "code": "yebfly1",
+  "common_name": "Yellow-breasted Flycatcher",
+  "scientific_name": "Tolmomyias flaviventris",
+  "group": "Aves"
+ },
+ {
+  "code": "yebsee1",
+  "common_name": "Yellow-bellied Seedeater",
+  "scientific_name": "Sporophila nigricollis",
+  "group": "Aves"
+ },
+ {
+  "code": "yecspi2",
+  "common_name": "Yellow-chinned Spinetail",
+  "scientific_name": "Certhiaxis cinnamomeus",
+  "group": "Aves"
+ },
+ {
+  "code": "yectyr1",
+  "common_name": "Yellow-crowned Tyrannulet",
+  "scientific_name": "Tyrannulus elatus",
+  "group": "Aves"
+ },
+ {
+  "code": "yehbla2",
+  "common_name": "Yellow-hooded Blackbird",
+  "scientific_name": "Chrysomus icterocephalus",
+  "group": "Aves"
+ },
+ {
+  "code": "yehcar1",
+  "common_name": "Yellow-headed Caracara",
+  "scientific_name": "Milvago chimachima",
+  "group": "Aves"
+ },
+ {
+  "code": "yelori1",
+  "common_name": "Yellow Oriole",
+  "scientific_name": "Icterus nigrogularis",
+  "group": "Aves"
+ },
+ {
+  "code": "yeofly1",
+  "common_name": "Yellow-olive Flycatcher",
+  "scientific_name": "Tolmomyias sulphurescens",
+  "group": "Aves"
+ },
+ {
+  "code": "yercac1",
+  "common_name": "Yellow-rumped Cacique",
+  "scientific_name": "Cacicus cela",
+  "group": "Aves"
+ },
+ {
+  "code": "ywcpar",
+  "common_name": "Yellow-crowned Parrot",
+  "scientific_name": "Amazona ochrocephala",
+  "group": "Aves"
+ }
+]

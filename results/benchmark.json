@@ -1,0 +1,36 @@
+{
+  "n_segments": 3000,
+  "n_species": 178,
+  "cpu": "x86_64",
+  "cores": 2,
+  "max_input_difference_vs_torchvision": 0.0,
+  "models": {
+    "pytorch_fp32": {
+      "top1": 0.618,
+      "top5": 0.7673333333333333,
+      "agreement_with_pytorch_top1": 1.0,
+      "size_mb": 17.364574,
+      "latency_ms_1_thread": 24.295138039997255,
+      "latency_ms_all_cores": 22.077676180001617,
+      "end_to_end_ms_30s_recording": null
+    },
+    "onnx_fp32": {
+      "top1": 0.618,
+      "top5": 0.7673333333333333,
+      "agreement_with_pytorch_top1": 1.0,
+      "size_mb": 17.075758,
+      "latency_ms_1_thread": 10.544633340000473,
+      "latency_ms_all_cores": 6.342155279999133,
+      "end_to_end_ms_30s_recording": 105.14064110000163
+    },
+    "onnx_int8": {
+      "top1": 0.4136666666666667,
+      "top5": 0.5953333333333334,
+      "agreement_with_pytorch_top1": 0.459,
+      "size_mb": 5.15342,
+      "latency_ms_1_thread": 8.973784400000113,
+      "latency_ms_all_cores": 6.393700439998611,
+      "end_to_end_ms_30s_recording": 101.64900079998915
+    }
+  }
+}

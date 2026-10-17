@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "birdclef-api"
+version = "1.0.0"
+description = "Species identification from field recordings, served as an API (ONNX Runtime + FastAPI)"
+authors = [{ name = "Youssef Khazal" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "librosa>=0.10",
+  "soundfile>=0.12",
+  "matplotlib",
+  "pillow",
+  "onnxruntime>=1.17",
+  "fastapi>=0.110",
+  "uvicorn[standard]",
+  "python-multipart",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+export = ["torch", "torchvision", "onnx", "onnxscript"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+birdclef_api = ["static/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]

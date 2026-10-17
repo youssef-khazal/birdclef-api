@@ -1,0 +1,11 @@
+.git
+.github
+tests
+scripts
+results
+notebooks
+data
+models/efficientnet_b0_int8.onnx
+**/__pycache__
+*.egg-info
+.pytest_cache

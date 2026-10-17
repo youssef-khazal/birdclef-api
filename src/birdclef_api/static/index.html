@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Species Sound Classifier</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --ink: #161614; --muted: #5d5c57; --line: #e2e0d8;
+    --accent: #1f6f4a; --accent-soft: #e3f0e8; --bar: #2a78d6; --bar-bg: #ecebe6; --warn: #8a5a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141413; --surface: #1d1d1b; --ink: #f0efea; --muted: #b4b2a8; --line: #33322f;
+      --accent: #5fbf8c; --accent-soft: #20332a; --bar: #4c93ea; --bar-bg: #2b2b28; --warn: #e3b252;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .drop { display: block; border: 2px dashed var(--line); border-radius: 10px; padding: 28px 16px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
+  .drop.over, .drop:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .drop strong { color: var(--accent); }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; align-items: center; }
+  .examples span { color: var(--muted); font-size: .9rem; margin-right: 4px; }
+  button { font: inherit; font-size: .9rem; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+           border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  audio { width: 100%; margin-top: 4px; }
+  .status { color: var(--muted); font-size: .95rem; min-height: 1.5em; }
+  .status.error { color: var(--warn); }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin: 12px 0; }
+  .name { font-weight: 600; }
+  .sci { color: var(--muted); font-style: italic; font-size: .9rem; }
+  .pct { font-variant-numeric: tabular-nums; font-weight: 600; align-self: start; }
+  .track { grid-column: 1 / -1; height: 8px; background: var(--bar-bg); border-radius: 4px; overflow: hidden; }
+  .fill { height: 100%; background: var(--bar); border-radius: 4px; }
+  .row:first-child .fill { background: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .meta { color: var(--muted); font-size: .85rem; margin-top: 8px; }
+  .note { font-size: .85rem; color: var(--muted); }
+  a { color: var(--accent); }
+  h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Species Sound Classifier</h1>
+  <p class="lede">Upload a field recording and an EfficientNet-B0 model identifies which of 206 species
+    (birds, amphibians, insects and mammals from the BirdCLEF+ 2025 dataset) it hears.</p>
+
+  <div class="card">
+    <label class="drop" id="drop">
+      <input type="file" id="file" accept="audio/*,.ogg,.wav,.flac,.mp3,.m4a" hidden>
+      <div><strong>Choose an audio file</strong> or drop it here</div>
+      <div class="note">wav, flac, ogg, mp3 or m4a · up to 15 MB · the first 2 minutes are analysed</div>
+    </label>
+    <div class="examples">
+      <span>Or try an example:</span>
+      <button data-ex="great_kiskadee_XC248744.ogg">Great Kiskadee</button>
+      <button data-ex="bananaquit_XC912389.ogg">Bananaquit</button>
+      <button data-ex="whistling_grass_frog_XC882794.ogg">Whistling Grass Frog</button>
+    </div>
+  </div>
+
+  <div class="card" id="out" hidden>
+    <audio id="player" controls></audio>
+    <p class="status" id="status"></p>
+    <div id="results" hidden>
+      <h2>Most likely species</h2>
+      <div id="top"></div>
+      <p class="meta" id="meta"></p>
+      <details>
+        <summary>Prediction for each 5-second segment</summary>
+        <table><thead><tr><th>Start</th><th>Species</th><th>Probability</th></tr></thead><tbody id="segs"></tbody></table>
+      </details>
+    </div>
+  </div>
+
+  <p class="note">The model only knows the 206 species of the BirdCLEF+ 2025 competition (set in Colombia), so any
+    recording gets one of them as an answer; it was trained on single-species recordings and is less reliable on noisy
+    soundscapes. Examples are held-out xeno-canto recordings (CC BY / CC BY-SA, see the repository).
+    · <a href="/docs">API documentation</a> · <a href="https://github.com/youssef-khazal/birdclef-api">Source code</a></p>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (p) => (p * 100).toFixed(1) + "%";
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+async function classify(blob, name) {
+  $("out").hidden = false; $("results").hidden = true;
+  $("status").className = "status"; $("status").textContent = "Analysing " + name + "…";
+  $("player").src = URL.createObjectURL(blob);
+  const form = new FormData(); form.append("file", blob, name);
+  try {
+    const r = await fetch("/predict", { method: "POST", body: form });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.detail || "Request failed");
+    render(data);
+  } catch (e) {
+    $("status").className = "status error"; $("status").textContent = "Error: " + e.message;
+  }
+}
+
+function render(d) {
+  $("status").textContent = "";
+  $("top").innerHTML = d.top_k.map((p) => `
+    <div class="row">
+      <div><div class="name">${esc(p.common_name)}</div><div class="sci">${esc(p.scientific_name)} · ${esc(p.group)}</div></div>
+      <div class="pct">${fmt(p.probability)}</div>
+      <div class="track"><div class="fill" style="width:${Math.max(1, p.probability * 100)}%"></div></div>
+    </div>`).join("");
+  $("segs").innerHTML = d.per_segment.map((s) =>
+    `<tr><td class="num">${s.start_seconds}s</td><td>${esc(s.common_name)}</td><td class="num">${fmt(s.probability)}</td></tr>`).join("");
+  $("meta").textContent = `${d.duration_seconds}s of audio · ${d.segments} segment(s) · decoding ${d.timing_ms.decode} ms · `
+    + `model ${d.timing_ms.inference} ms` + (d.truncated_to_seconds ? ` · truncated to ${d.truncated_to_seconds}s` : "");
+  $("results").hidden = false;
+}
+
+$("file").addEventListener("change", (e) => { const f = e.target.files[0]; if (f) classify(f, f.name); });
+const drop = $("drop");
+["dragenter", "dragover"].forEach((t) => drop.addEventListener(t, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((t) => drop.addEventListener(t, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", (e) => { const f = e.dataTransfer.files[0]; if (f) classify(f, f.name); });
+document.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", async () => {
+  const r = await fetch("/examples/" + b.dataset.ex); classify(await r.blob(), b.dataset.ex);
+}));
+</script>
+</body>
+</html>
